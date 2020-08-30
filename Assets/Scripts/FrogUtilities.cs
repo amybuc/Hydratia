@@ -16,15 +16,15 @@ public class FrogUtilities : MonoBehaviour
 
     public void getFrogHappiness()
     {
-        if (WaterManager.instance.getDailyWaterCountPercentage() <= 25)
+        if (GameManager.instance.getDailyWaterCountPercentage() <= 25)
         {
             //thirsty
         }
-        if (WaterManager.instance.getDailyWaterCountPercentage() > 25 && WaterManager.instance.getDailyWaterCountPercentage() <= 75)
+        if (GameManager.instance.getDailyWaterCountPercentage() > 25 && GameManager.instance.getDailyWaterCountPercentage() <= 75)
         {
             //fine
         }
-        if (WaterManager.instance.getDailyWaterCountPercentage() > 75 && WaterManager.instance.getDailyWaterCountPercentage() <= 100)
+        if (GameManager.instance.getDailyWaterCountPercentage() > 75 && GameManager.instance.getDailyWaterCountPercentage() <= 100)
         {
             //happy
         }

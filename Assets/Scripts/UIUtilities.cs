@@ -20,7 +20,7 @@ public class UIUtilities : MonoBehaviour
 
     public void updateMainUI()
     {
-        dailyCountText.text = "" + WaterManager.instance.dailyCount + " / " + WaterManager.instance.dailyGoal;
+        dailyCountText.text = "" + GameManager.instance.dailyCount + " / " + GameManager.instance.dailyGoal;
     }
 
 }
