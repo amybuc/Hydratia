@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class WaterLog : MonoBehaviour
+public class WaterLog : ScriptableObject
 {
 
     public DateTime dateTime;

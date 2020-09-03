@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
 
     public DateTime Today;
 
-    public List<WaterLog> pastDailyLogs = new List<WaterLog>(); 
+    public List<WaterLog> pastDailyLogs = new List<WaterLog>();
+
 
 
     // Start is called before the first frame update
@@ -21,19 +22,8 @@ public class GameManager : MonoBehaviour
     {
         instance = this;
 
-        TimeSaveManager.instance.loadPreviousLogs();
-        TimeSaveManager.instance.AdaptNewDay();
-
-        WaterLog newlog = new WaterLog();
-        newlog.dateTime = System.DateTime.Today.AddDays(1);
-        newlog.waterGoal = 2000;
-        newlog.waterDrank = 1020;
-
-        pastDailyLogs.Add(newlog);
-
-        Debug.Log("Datetime today is " + System.DateTime.Today);
-        Debug.Log("Datetime of logged waterlog is " + pastDailyLogs[0].dateTime);
-
+        SaveLoadManager.instance.loadData();
+        SaveLoadManager.instance.checkDay();
 
     }
 
