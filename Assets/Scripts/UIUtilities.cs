@@ -14,8 +14,13 @@ public class UIUtilities : MonoBehaviour
     public GameObject recordsContent;
     public GameObject logPrefab;
 
+    [Header("Enter Amount Sreen")]
+    public TMP_InputField inputfield;
+    public bool inputChanged;
+
     [Header("Main Screen")]
     public TextMeshProUGUI dailyCountText; //Debug, will be replaced with progress bar
+    public Slider dailyCountSlider;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +31,7 @@ public class UIUtilities : MonoBehaviour
     public void updateMainUI()
     {
         dailyCountText.text = "" + GameManager.instance.dailyCount + " / " + GameManager.instance.dailyGoal;
+        dailyCountSlider.value = GameManager.instance.getDailyWaterCountPercentage();
     }
 
     public void DEBUGAddLogButton()
@@ -65,6 +71,33 @@ public class UIUtilities : MonoBehaviour
         }
     }
 
+    public void mLChangeValue()
+    {
+        inputChanged = true;
+    }
+
+    public void entermLScreenBack()
+    {
+        inputChanged = false;
+        inputfield.text = "";
+    }
+
+    public void entermLScreenEnter()
+    {
+        if (inputChanged == true)
+        {
+            GameManager.instance.addMLToDailyCount(int.Parse(inputfield.text));
+            inputChanged = false;
+            inputfield.text = "";
+        }
+        else
+        {
+            return;
+        }
+
+
+    }
+
     public void DEBUGPrintLogs()
     {
         if (GameManager.instance.pastDailyLogs != null)
@@ -81,9 +114,6 @@ public class UIUtilities : MonoBehaviour
         {
             Debug.Log("pastDailyLogs is returning null");
         }
-
-        
-
     }
 
 

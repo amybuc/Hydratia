@@ -1,17 +1,18 @@
 ﻿<Properties StartupConfiguration="{DFCF2F1C-8B22-4276-6FD2-0DE35D47714B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FrogUtilities.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SaveLoadManager.cs">
     <Files>
       <File FileName="Assets/Scripts/WanderingAI.cs" Line="25" Column="33" />
-      <File FileName="Assets/Scripts/Objects/WaterLog.cs" Line="6" Column="1" />
-      <File FileName="Assets/Scripts/UIUtilities.cs" Line="52" Column="60" />
-      <File FileName="Assets/Scripts/FrogUtilities.cs" Line="31" Column="6" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="25" Column="1" />
-      <File FileName="Assets/Scripts/SaveLoadManager.cs" Line="12" Column="25" />
+      <File FileName="Assets/Scripts/Objects/WaterLog.cs" />
+      <File FileName="Assets/Scripts/UIUtilities.cs" Line="17" Column="35" />
+      <File FileName="Assets/Scripts/FrogUtilities.cs" />
+      <File FileName="Assets/Scripts/GameManager.cs" />
+      <File FileName="Assets/Scripts/SaveLoadManager.cs" Line="22" Column="6" />
+      <File FileName="Assets/Scripts/Frog.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0d22b12c-01eb-427d-a059-ce406c850d14" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="888af8a8-05d8-4ddc-852e-5e0e4438e8fb" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -23,11 +23,12 @@ public class SaveLoadManager : MonoBehaviour
         
     }
 
-
+    
     public void OnApplicationPause(bool pause = true)
     {
-        //saveData();
+        saveData();
     }
+    
 
     public void OnApplicationQuit()
     {
